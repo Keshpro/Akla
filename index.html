@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Birthday Nangi! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="confetti-container"></div>
+
+    <div id="slide1" class="slide active">
+        <div class="polaroid-card">
+            <h1>Happy Birthday Nangi! 🎂✨</h1>
+            <p>To the other half of the best duo!</p>
+            <button onclick="nextSlide(2)">Let's Celebrate!</button>
+        </div>
+    </div>
+
+    <div id="slide2" class="slide">
+        <div class="polaroid-card tilted-right">
+            <img src="assets/minions.gif" class="gif-image" alt="Minions">
+            <h2>Ready for a fun year ahead? 🥳</h2>
+            <button class="btn-yellow" onclick="nextSlide(3)">Oh Yeah!</button>
+        </div>
+    </div>
+
+    <div id="slide3" class="slide">
+        <div class="polaroid-card tilted-left">
+            <img src="assets/mini2.gif" class="gif-image" alt="Minions Celebrating">
+            <h2>Wishing you all the happiness and success! 🌟</h2>
+            <button class="btn-yellow" onclick="nextSlide(4)">Open Your Surprise</button>
+        </div>
+    </div>
+
+    <div id="slide4" class="slide">
+        <div class="final-container">
+            <video id="bdayVideo" playsinline webkit-playsinline>
+                <source src="assets/miniv.mp4" type="video/mp4">
+            </video>
+
+            <div id="endContent" class="hidden-content">
+                <div class="polaroid-card straight">
+                    <img src="assets/img.png" alt="Collage">
+                    <h2 class="fun-title">Happy Birthday!! 🎉</h2>
+                    <p class="sweet-message">
+                        Wishing you a fantastic birthday filled with laughter, joy, and amazing memories. May all your dreams come true this year. Stay awesome, Nangi! 😊
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
